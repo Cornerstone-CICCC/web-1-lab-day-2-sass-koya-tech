@@ -1,0 +1,101 @@
+header {
+  background: #fffb00;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+}
+header + * {
+  margin-top: 0px;
+}
+header nav ul {
+  display: flex;
+  padding: 10px 0;
+}
+header nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+section h2 {
+  background: #00eeff;
+  position: sticky;
+  top: 60px;
+}
+section p {
+  margin: 20px 0;
+}
+section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+section .gallery img {
+  width: calc((100% - 40px) / 3);
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+section .gallery img:hover {
+  transform: scale(1.05);
+}
+
+.fruit-hover figure {
+  position: relative;
+  margin: 0;
+  width: fit-content;
+}
+.fruit-hover figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.fruit-hover figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.7019607843);
+  color: white;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+.fruit-hover figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: black;
+  padding: 10px;
+}
+.back-to-top-btn a {
+  color: white;
+}
+
+p {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

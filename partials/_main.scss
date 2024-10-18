@@ -1,0 +1,79 @@
+h1 {
+    margin: 10px 0;
+}
+
+section {
+    h2 {
+        background: $secondary-color;
+        position: sticky;
+        top: $header-height;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+        img {
+            width: calc((100% - 40px) / 3);
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.fruit-hover {
+    figure {
+        position: relative;
+        margin: 0;
+        width: fit-content;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #ff0000b3;
+            color: white;
+            font-size: 14px;
+
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all 0.3s ease;
+        }
+
+        &:hover figcaption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.back-to-top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: black;
+    padding: 10px;
+
+    a {
+        color: white;
+    }
+}

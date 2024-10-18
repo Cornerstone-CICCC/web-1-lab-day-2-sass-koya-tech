@@ -1,0 +1,25 @@
+header {
+    background: $primary-color;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    height: $header-height;
+
+    &+* {
+        margin-top: 0px;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 10px;
+    }
+}
